@@ -1,0 +1,14 @@
+<%= form_for(@article) do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+
+  <%= f.label :content %>
+  <%= f.text_field :content %>
+
+  <%= f.submit %>
+<% end %>
+
+<div class="div-add">
+  <br>
+  <i class="fas fa-hat-wizard"></i><%= link_to "Back to list", articles_path %>
+</div>
